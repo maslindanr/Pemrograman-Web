@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function mouseDown(){
+                document.getElementById('output').src='open.jpg';
+                var sound = document.getElementById('sound');
+                sound.play();
+                
+                var counter = document.getElementById('counter').innerHTML;
+                document.getElementById('counter').innerHTML = parseInt(counter)+1;
+            }
+            function mouseUp(){
+                document.getElementById('output').src='close.jpg';
+            }
+        </script>
+    </head>
+    <body style="background-color: blanchedalmond;">
+        <audio id="sound">
+            <source src="popcatsound.mp3">
+        </audio>
+        <h3 id="counter" style="position: absolute; font-size: 40px; padding-left: 140px; margin-top: 2px; font-family: cursive; color: whitesmoke;">0</h3>
+        <img id="output" src="close.jpg"
+          onmousedown="mouseDown()"
+          onmouseup="mouseUp()"
+        />
+    </body>
+</html>
