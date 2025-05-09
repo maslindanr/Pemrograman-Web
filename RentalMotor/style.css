@@ -1,0 +1,36 @@
+/* (*) Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial';
+}
+
+/* (.) Class Selector */
+.deskripsi h2 {
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Element Selector */
+footer{
+  background-color: #5a6268;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* #id Selector */
+#saveButton:hover {
+  background-color: #5a6268;
+}
+#saveModal .modal-content {
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
