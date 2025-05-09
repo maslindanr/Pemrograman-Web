@@ -1,0 +1,171 @@
+/* Penambahan style CSS secara External
+
+/* Universal Selector */
+html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: transparent; 
+    background-image: url("img/sonyyyyy.jpeg");
+    background-position: center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background-color: aliceblue;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: #d94879;
+}
+.container header{
+    font-size: 1.5 rem;
+    color: #d94879;
+    font-weight: 500;
+    text-align: center;
+}
+.container form{
+    margin-top: 30px;
+}
+.form.input-box{
+    width: 100%;
+    margin-top: 10px;
+}
+.input-box label{
+    color: #d94879;
+}
+.form :where(.input-box input, .select-box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #d44253;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0 14px;
+}
+.input-box:focus{
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column{
+    display: flex;
+    column-gap: 15px;
+}
+
+.select-box select{
+    height: 20px;
+    width: 100px;
+    outline: none;
+    border: none;
+    color: #d44253;
+    font-size: 14px;
+    column-gap: 50px;
+}
+.form-button{
+    height: 55px;
+    width: 100%;
+    color: aqua;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: linear-gradient(to right, pink, red);
+
+}
+section{
+    background-position: 20px 30px;
+}
+ input.tbSubmit{
+    background-color: rgb(29, 160, 160);
+    height: 20px;
+}
+input.tbSubmit:hover{
+    background-color: chocolate;
+}
+input.tbBatal{
+    background-color: hsl(339, 80%, 59%);
+}
+input.tbReset:hover{
+    background-color: goldenrod;
+} 
+
+/* type selector */
+h2 {
+    background-color: #d94879;;
+    color: white;
+}
+
+ class selector 
+input.form-input{
+    color: rgb(138, 93, 26);
+}
+input.form-button{
+    color:  #d94879;
+    outline-offset: 2cm;
+    border-color: pink;
+    margin-top: 3cm;
+} 
+
+
+/* id selector */
+#jk_L{
+    color: pink;
+}
+#jk_P{
+    background-color: pink;
+}
+p>b{
+    color:  #d94879;
+}
+
+
+/* Descendant Combinator */
+div.JenisKelamin{
+    color: black;
+}
+
+/* Child Combinator (>) */
+div.select > div.checkbox{
+    background-color: transparent;
+}
+
+/* Next Sibling Combinator (+) */
+div+h2{
+    background-color: #d94879;
+}
+
+/* Subsequent-sibling Combinator (~) */
+div~h3{
+    background-color: rgb(117, 113, 86);
+}
+
+h1::after {
+    content: url(https://img.clipart-library.com/2/clip-school-animated-gif/clip-school-animated-gif-36.gif);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  p::first-letter {
+    color: #d94879;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  } 
+

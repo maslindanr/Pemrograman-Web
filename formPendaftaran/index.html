@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>FORM PENDAFTARAN EKSKUL</title>
+        <link rel="stylesheet" href="style.css">
+        <!--Penambahan style CSS secara Internal-->
+        <style>
+        .jenisKelamin h3{
+                            color: #d44253;
+                            font-size: 1rem;
+                            font-weight: 400;
+                            margin-bottom: 8px;
+        }
+        .form .jenisKelamin{
+                                margin-top: 20px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <section class="container">
+            <!--Penambahan style CSS secara InLine-->
+            <h1 style="color: #d94879; font-size: 40px; text-align: center;">FORMULIR PENDAFTARAN EKSTRAKULIKULER</h1>
+            <h2>1. Identitas Diri</h2>
+                <div>
+                    <form class="registration-form" action="#">
+                        <div class="input-box">
+                            <label>Nama Lengkap</label>
+                            <input type="text" placeholder="Masukan Nama Lengkap" required><br>
+                        </div>
+                        <div class="input-box">
+                            <label>Tanggal Lahir</label>
+                            <input type="date" placeholder="Masukan Tanggal Lahir" required><br>
+                        </div>
+                        <div class="select">
+                                <div class="select-box">
+                                    <!--Penambahan style CSS secara InLine-->
+                                    <label style="color: #d94879">Kelas</label>
+                                    <select>
+                                        <option hidden>Pilih Kelas</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                    </select>
+                                </div>   
+                        </div>
+                        <div class="input-box">
+                            <label>Email</label>
+                            <input type="email" placeholder="Masukan Email" required><br>
+                        </div>
+                        <div class="coluumn">
+                            <div class="input-box">
+                                <label>Nomor HP</label>
+                                <input type="number" placeholder="Masukan Nomor HP" required><br>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <label>Alamat</label>
+                            <input type="text" placeholder="Masukan Alamat" required><br>
+                        </div>
+                        <div class="jenisKelamin">
+                            <h3>Jenis Kelamin</h3>
+                            <div class="jk-option">
+                                <div class="jk">
+                                    <input type="radio" id="jk_L" name="jenisKelamin">
+                                    <label for="jk_L">Laki-laki</label>
+                                </div>
+                                <div class="jk">
+                                    <input type="radio" id="jk_P" name="jenisKelamin">
+                                    <label for="jk_P">Perempuan</label>
+                                </div>
+                            </div>
+                        </div>
+                        <h2>2. Pilihan Ekstrakulikuler</h2>
+                            <div>
+                                <p><b>(Maksimal boleh memilih 3 Ekstrakulikuler)</b></p>
+                                <div class="select">
+                                        <div class="checkbox">
+                                            <div>
+                                                <input type="checkbox" name="ekskul[]" value="Pramuka" id="ekskul1">
+                                                <label for="ekskul1">Pramuka
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" name="ekskul[]" value="PMR" id="ekskul2">
+                                                <label for="ekskul2">Palang Merah Remaja (PMR)</label><br>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" name="ekskul[]" value="PKS" id="ekskul3">
+                                                <label for="ekskul3">Patroli Keamanan Sekolah (PKS)</label><br>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" name="ekskul4" value="BolaVoli" id="ekskul4">
+                                                <label for="ekskul4">Bola Voli</label><br>
+                                            </div>
+                                            <div>
+                                                <input type="checkbox" name="ekskul5" value="DrumBand" id="ekskul5">
+                                                <label for="ekskul5">Drum Band</label><br>
+                                            </div>
+                                        </div>   
+                                </div>
+                            </div>
+                        <div class="form-button">
+                            <input type="submit" value="Kirim">
+                            <input type="reset" value="Batal">
+                        </div>
+                    </form>
+                </div>              
+        </section>
+    </body>
+</html>
